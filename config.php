@@ -44,7 +44,7 @@ $THEME->editor_sheets = [];
 // themes. We have added add more than one parent here to inherit from multiple parents, and if we did they would be processed in
 // order of importance (later themes overriding earlier ones). Things we will inherit from the parent theme include
 // styles and mustache templates and some (not all) settings.
-$THEME->parents = ['classic'];
+$THEME->parents = ['classic', 'boost'];
 
 // A dock is a way to take blocks out of the page and put them in a persistent floating area on the side of the page.
 // does not support a dock so we won't either - but look at bootstrapbase for an example of a theme with a dock.
@@ -127,7 +127,7 @@ $THEME->layouts = [
         'defaultregion' => 'side-pre',
     ),
     'login' => array(
-        'theme' => 'classic',
+        'theme' => 'boost',
         'file' => 'login.php',
         'regions' => array(),
         'options' => array('langmenu' => true),
@@ -149,7 +149,7 @@ $THEME->layouts = [
     ),
     // Embeded pages, like iframe/object embeded in moodleform - it needs as much space as possible.
     'embedded' => array(
-        'theme' => 'classic',
+        'theme' => 'boost',
         'file' => 'embedded.php',
         'regions' => array()
     ),
@@ -157,7 +157,7 @@ $THEME->layouts = [
     // This must not have any blocks, links, or API calls that would lead to database or cache interaction.
     // Please be extremely careful if you are modifying this layout.
     'maintenance' => array(
-        'theme' => 'classic',
+        'theme' => 'boost',
         'file' => 'maintenance.php',
         'regions' => array(),
     ),
@@ -170,7 +170,7 @@ $THEME->layouts = [
     ),
     // The pagelayout used when a redirection is occuring.
     'redirect' => array(
-        'theme' => 'classic',
+        'theme' => 'boost',
         'file' => 'embedded.php',
         'regions' => array(),
     ),

@@ -7,6 +7,8 @@ Tested with moodle 3.8
 
 # Installation
 
-Put all files from this repository to /moodle/themes/test folder, then install plugin from site administration panel.
+Put all files from this repository in /moodle/theme/test folder, then install plugin from site administration panel.
+
 Details: https://docs.moodle.org/38/en/Installing_plugins.
+
 To see changes, you should select Test theme in theme selector.
